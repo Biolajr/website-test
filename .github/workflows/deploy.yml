@@ -1,0 +1,35 @@
+name: CI/CD Deploy
+
+on:
+  push:
+    tags:
+      - 'v*'  # e.g. v0.1.0
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and Push
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: p2ra/parasyte-frontend:${{ github.ref_name }}
+
+  notify:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_MESSAGE: "🚀 Deploy ${{ github.ref_name }} completed!"
+
