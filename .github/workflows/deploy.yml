@@ -21,7 +21,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: p2ra/parasyte-frontend:${{ github.ref_name }}
+          tags: biolar/website-test:${{ github.ref_name }}
 
   notify:
     needs: build-and-push
