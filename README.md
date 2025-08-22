@@ -1,83 +1,82 @@
-# [Start Bootstrap - Agency](https://startbootstrap.com/theme/agency)
+# Parasyte Web Template
 
-[Agency](https://startbootstrap.com/theme/agency) is a one page, agency portfolio theme built with [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid, modal windows for each portfolio item, and a working PHP based contact form.
+A modern, anime-inspired portfolio template, customized from the Start Bootstrap Agency theme.  
+I rebuilt, Dockerized, and deployed this project to demonstrate my DevOps, CI/CD, and cloud skills.
 
-## Preview
+---
 
-[![Agency Preview](https://assets.startbootstrap.com/img/screenshots/themes/agency.png)](https://startbootstrap.github.io/startbootstrap-agency/)
+## 🚀 Idea
+I wanted to create a professional portfolio site with an anime flair (inspired by *Parasyte*) while also showcasing my DevOps toolchain and deployment process.
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-agency/)**
+---
 
-## Status
+## 🛠️ Process
+1. Customized the **Start Bootstrap Agency** template.  
+2. Containerized the app with **Docker**.  
+3. Deployed using **GitHub Pages** (static hosting).  
+4. Set up CI/CD pipelines for automated builds.  
+5. Added monitoring and Kubernetes manifests for advanced deployment.  
+6. Linked screenshots and live demo in my portfolio.
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-agency/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-agency.svg)](https://www.npmjs.com/package/startbootstrap-agency)
+---
 
-## Download and Installation
+## 🌐 Live Demo
+👉 [View the Parasyte Web Template](https://parasyte-com.github.io/parasyte-web-template/#/)
 
-To begin using this template, choose one of the following options to get started:
+---
 
-- [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/agency)
-- Install using npm: `npm i startbootstrap-agency`
-- Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-agency.git`
-- [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-agency)
+## 📸 Screenshots
+![Screenshot A](public/images/screenshot-a.png)  
+![Screenshot B](public/images/screenshot-b.png)  
 
-## Usage
+---
 
-### Basic Usage
+## 🧑‍💻 Tech Stack
+- **Frontend**: Bootstrap, HTML5, CSS3, JS  
+- **DevOps**: Docker, CI/CD, Kubernetes, GitHub Actions  
+- **Hosting**: GitHub Pages  
 
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+---
 
-### Advanced Usage
+## 📖 How to Run Locally
+```bash
+# clone the repo
+git clone https://github.com/<your-username>/parasyte-web-template.git
 
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
+cd parasyte-web-template
 
-#### npm Scripts
+# install dependencies
+npm install
 
-- `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
-- `npm run build:assets` copies the files in the `src/assets/` directory into `dist`
-- `npm run build:pug` compiles the Pug located in the `src/pug/` directory into `dist`
-- `npm run build:scripts` brings the `src/js/scripts.js` file into `dist`
-- `npm run build:scss` compiles the SCSS files located in the `src/scss/` directory into `dist`
-- `npm run clean` deletes the `dist` directory to prepare for rebuilding the project
-- `npm run start:debug` runs the project in debug mode
-- `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
+# run locally
+npm start
+📦 Docker
+# build the docker image
+docker build -t parasyte-web-template .
 
-You must have npm installed in order to use this build environment.
+# run the container
+docker run -p 3000:3000 parasyte-web-template
 
-### Contact Form
+📝 License
 
-The contact form available with this theme is prebuilt to use [SB Forms](https://startbootstrap.com/solution/contact-forms).
-SB Forms is a simple form solution for adding functional forms to your theme. Since this theme is prebuilt using our
-SB Forms markup, all you need to do is sign up for [SB Forms on Start Bootstrap](https://startbootstrap.com/solution/contact-forms).
+This project is based on Start Bootstrap Agency
+ (MIT license).
+Customized and extended by Lawal Abiola.
 
-After signing up you will need to set the domain name your form will be used on, and you will then see your
-access key. Copy this and paste it into the `data-sb-form-api-token='API_TOKEN'` data attribute in place of
-`API_TOKEN`. That's it! Your forms will be up and running!
+---
 
-If you aren't using SB Forms, simply delete the custom data attributes from the form, and remove the link above the
-closing `</body>` tag to SB Forms.
+### 🔹 Why this is better
+- It **shows your work** (Docker, CI/CD, K8s).  
+- It **links the live demo**.  
+- It **has screenshots** (you already saved them in `public/images/`).  
+- It’s **professional**, and much more appealing to recruiters/tech leads.  
 
-## Bugs and Issues
+---
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-agency/issues) here on GitHub or leave a comment on the [theme overview page at Start Bootstrap](https://startbootstrap.com/theme/agency).
+👉 To your question: *“test deploy i did not include it, so what do I do?”*  
+- That’s fine 👍 The "test deploy" doesn’t matter. Just make sure your README **documents the final deployment steps** (e.g., GitHub Pages + Docker).  
 
-## About
+---
 
-Start Bootstrap is an open source library of free Bootstrap themes and templates. All of the free themes and templates on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+Do you want me to also write a **README.md template for your portfolio repo** (the one where you list all projects and blogs), so both repos look professional?
 
-- <https://startbootstrap.com>
-- <https://twitter.com/SBootstrap>
-
-Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
-
-- <https://davidmiller.io>
-- <https://twitter.com/davidmillerhere>
-- <https://github.com/davidtmiller>
-
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2023 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE) license.
-# test deploy
